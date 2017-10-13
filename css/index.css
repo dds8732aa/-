@@ -1,0 +1,1871 @@
+.clerFix:after {
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+}
+.bgindex{
+    background: url("../img/index/index.png");
+}
+body{
+    min-width: 1500px;
+}
+.minaCenter{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.header{
+    width: 100%;
+    height: 628px;
+    background: url("../img/index/main_banner.jpg") top center;
+}
+.header .nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 1500px;
+    height: 100px;
+    transition: .3s;
+    z-index: 8;
+}
+.header .nav.hover{
+    position: fixed;
+    background: rgba(255,255,255,.8);
+}
+.header .nav.scroll{
+    position: fixed;
+    background: rgba(255,255,255,.8);
+}
+.nav .left{
+    display: none;
+    float: left;
+    width: 370px;
+    height: 100px;
+    transition: .3s;
+}
+.nav .left .qroode{
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+.nav .left .qroode p{
+    float: left;
+    font-size: 14px;
+    width: 14px;
+    margin: 10px 12px;
+}
+.nav .left .qroode img{
+    float: left;
+    width: 73px;
+    height: 73px;
+    margin-top: 14px;
+}
+.nav .left .logo{
+    float: right;
+    width: 246px;
+    height: 73px;
+    margin-top: 13px;
+    border-left: 1px solid #666;
+}
+.nav .left .logo .logoImg{
+    float: left;
+    width: 73px;
+    height: 100%;
+    background-position:  158px -156px;
+}
+.nav .left .logo p{
+    float: left;
+    margin-left: 15px;
+}
+.nav .left .logo .logoTxt1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav .left .logo .logoTxt2{
+    font-size: 16px;
+}
+.nav .mainList{
+    float: right;
+    margin-right: 40px;
+    margin-top: 40px;
+    width: 700px;
+    height: 25px;
+}
+.nav ul li{
+    float: left;
+}
+.nav .main{
+    font-size: 16px;
+    line-height: 25px;
+}
+.nav .main a{
+    display: block;
+    color: #000;
+    padding: 0 20px 35px;
+}
+.nav .main>a:hover{
+    color: #cc4336;
+    transition: .3s;
+}
+.nav .ulHide{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    background: #e1ebeb;
+}
+.ulHide .hide{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+.nav .main.hover a{
+    color: #cc4336;
+}
+.nav .main:hover .arrow{
+    display: block;
+}
+.nav .line{
+    width: 15px;
+    height: 25px;
+    background-position:  15px 115px;
+}
+.nav .main .arrow{
+    display: none;
+    width: 0;
+    height: 0;
+    margin: -25px 0 0 35px;
+    border: 12px solid transparent;
+    border-bottom-color: #e1ebeb;
+}
+.hide .handeList .mlist{
+    position: relative;
+    top: 30px;
+    width: 215px;
+    height: 150px;
+    transition: .5s;
+}
+.hide .handeList .mlist:hover{
+    top: 10px;
+}
+.hide .handeList li{
+    float: right;
+}
+.hide .handeList li p{
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.hide .handeList li i{
+    display: block;
+    margin: 0 auto;
+    width: 71px;
+    height: 71px;
+    background-image: url("../img/index/index.png");
+}
+.hide .handeList li i.i1{
+    width: 65px;
+    height: 70px;
+    background-position: 158px -230px;
+}
+.hide .handeList li i.i2{
+    width: 74px;
+    height: 68px;
+    background-position: 158px -302px;
+}
+.hide .handeList .Hlin{
+    width: 1px;
+    height: 105px;
+    background: #ccc;
+}
+.header .logo2{
+    position: absolute;
+    top: 40px;
+    left: -70px;
+    opacity: 0;
+    width: 70px;
+    height: 199px;
+    background: url("../img/index/logo.png");
+    transform: scale(1);
+    transition: .3s;
+}
+.header .logo2.scale{
+    transform: scale(0);
+}
+.header .roles{
+    position: relative;
+    width: 1113px;
+    height: 584px;
+    margin: 0 auto;
+    user-select: none;
+}
+.roles img{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    z-index: 5;
+}
+.roles .rol11.hide,.roles .rol12.hide{
+    left: 150px;
+    opacity: 0;
+}
+.roles .rol21.hide,.roles .rol22.hide {
+    left: 117px;
+    opacity: 0;
+}
+.roles .rol img{
+    position: absolute;
+    bottom: 2px;
+    z-index: 1;
+    opacity: 1;
+    transition:  1s;
+}
+.rol .rol11{
+    left: 20px;
+}
+.rol .rol12{
+    left: 319px;
+}
+.rol .rol21{
+    left: 20px;
+    z-index: 1;
+}
+.rol .rol22{
+    left: 234px;
+}
+.roles .btn{
+    display: block;
+    position: absolute;
+    top: 290px;
+    left: 800px;
+    width: 40px;
+    height: 66px;
+    background-position:  158px -439px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .5s;
+}
+.roles .btn:hover{
+    transform: scale(1.5);
+}
+.roles .servar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 105px;
+    cursor: pointer;
+}
+.servar img{
+    width: 100%;
+    height: 100%;
+}
+.serverList{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background:rgba(255,255,255,.6);
+}
+.serverList .main.show{
+    transform: scale(1);
+    top: 50%;
+    left: 50%;
+}
+.serverList .main{
+   position: absolute;
+    left: 35%;
+    top: 65%;
+    margin-top: -408px;
+    margin-left: -830px;
+    width: 1399px;
+    height: 724px;
+    background:url("../img/index/pop_bg.png");
+    transform: scale(0);
+    transition: .5s;
+}
+.serverList .main .right{
+    float: right;
+}
+.right .botImg{
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    height: 176px;
+    width: 240px;
+    background-position:  -330px -857px;
+}
+.main .close{
+    z-index: 99;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 31px;
+    height: 31px;
+    background-position:  115px -714px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.main .close:hover{
+    transform: rotate(180deg);
+}
+/*slide start*/
+.slide{
+    position: absolute;
+    right: 0;
+    top: 418px;
+    width: 504px;
+    height: 1100px;
+    background: url("../img/index/side_bg.png");
+    z-index: 5;
+}
+.slideTitle{
+    position: absolute;
+    top: -20px;
+    left:30px;
+    width: 313px;
+    height: 188px;
+    background-position:  -587px -853px;
+}
+.slide .download{
+    position: absolute;
+    top: 43px;
+    right: 504px;
+    width: 23px;
+    height: 110px;
+    background: #fccc00 ;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+    border: 5px solid #fdde00;
+    border-right: none;
+    transition: .5s;
+    overflow: hidden;
+}
+.slide .download .shrink{
+    display: none;
+    width: 23px;
+    height: 110px;
+    background-position:  230px -613px;
+    cursor: pointer;
+}
+.slide .download.stretch{
+    width: 380px;
+}
+.slide .arrow{
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: #fccc00;
+}
+.onStretch{
+    display: inline-block;
+    overflow: hidden;
+    width: 380px;
+    height: 110px;
+}
+.onStretch .onShrink{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-position:  106px -621px;
+    cursor: pointer;
+}
+.onStretch .slidMain{
+    margin-left: 25px;
+    width: 350px;
+    height: 100%;
+}
+.slidMain .textBg{
+    float: left;
+    margin-left: 5px;
+    width: 43px;
+    height: 100%;
+    background-position:  207px -615px;
+}
+.slidMain .qrcode{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin:0 8px;
+    padding: 4px;
+    border-radius: 5px;
+    background: #fff;
+}
+.qrcodeLine{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    animation:move 2s linear infinite;
+}
+.downLink{
+    float: left;
+    width: 170px;
+    margin-left: 4px;
+}
+.downLink a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-image: url("../img/index/index.png");
+}
+.downLink .ios{
+    background-position: -759px -608px;
+}
+.downLink .android{
+    background-position: -651px 80px;
+    margin-top: 7px;
+ }
+.downLink .ios:hover{
+    background-position: -480px 80px;
+}
+.downLink .android:hover{
+    background-position: -906px -960px;
+}
+.slide .main{
+    position: relative;
+    margin-top: 150px;
+}
+.slide .main ul li{
+    display: block;
+    position: absolute;
+    width: 321px;
+    height: 98px;
+    margin-top: 5px;
+    background: url("../img/index/index.png");
+    overflow: hidden;
+    transition: height .5s,left .5s,right .5s;
+
+}
+.slide .main ul li:nth-child(odd){
+    left: 40px;
+}.slide .main ul li:nth-child(even){
+    right: 187px;
+}
+.slide .main ul li:nth-child(odd):hover{
+    left: 27px;
+    z-index: 3;
+}
+.slide .main ul li:nth-child(even):hover{
+    right: 197px;
+    z-index: 3;
+}
+.slide .main .mainLi1{
+    width: 314px;
+    height: 98px;
+    background-position: -661px -1045px;
+    top: 0;
+}
+.slide .main .mainLi1:hover{
+    height: 205px;
+}
+.slide .main .mainLi1.pos{
+    background-position: -759px -5px;
+    z-index: 2;
+}
+
+.slide .main .mainLi2{
+    height: 88px;
+    background-position: -618px 256px;
+    top: 102px;
+}
+.slide .main .mainLi3{
+    width: 306px;
+    height: 93px;
+    background-position: -307px 257px;
+    top: 191px;
+}
+.slide .main .mainLi4{
+    width: 293px;
+    height: 97px;
+    background-position: -302px 362px;
+    top: 285px;
+}
+.slide .main .mainLi5{
+    width: 314px;
+    height: 131px;
+    background-position: -330px 503px;
+    top: 386px;
+}
+.slide .main .mainLi6{
+    width: 304px;
+    height: 97px;
+    background-position: -4px 259px;
+    top: 468px;
+    z-index:1;
+}
+.slide .main .mainLi7{
+    width: 309px;
+    height: 103px;
+    background-position: 478px 669px;
+    top: 555px;
+}
+.slide .main .mainLi8{
+    width: 305px;
+    height: 94px;
+    background-position: 645px 360px;
+    top: 653px;
+}
+.slide .main .mainLi9{
+    width: 304px;
+    height: 97px;
+    background-position: -595px 363px;
+    top: 740px;
+}
+.slide .main li div.show{
+    position: absolute;
+    top: 51px;
+    left: 25px;
+    width: 190px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 15px;
+}
+.slide .main li div.hide{
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    width: 190px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 15px;
+}
+/*content start*/
+.content{
+    width: 1400px;
+    margin: 0 auto;
+}
+.content .news{
+    width: 940px;
+    height: 270px;
+}
+.news .banner{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 270px;
+}
+.banner .pic{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.pic ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+}
+.pic ul li{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.pic .tab{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+    width: 105px;
+    height: 14px;
+}
+.banner .tab span{
+    display: block;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #e37b63;
+    border-radius: 50%;
+    margin:0 3px;
+    cursor: pointer;
+}
+.banner .tab span.on{
+    background: #e37b63;
+}
+.news .inform{
+    float: left;
+    width: 500px;
+    height: 270px;
+    margin-left: 35px;
+}
+.inform .tab{
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid #000;
+}
+.tab ul li{
+    position: relative;
+    float: left;
+    width: 92px;
+    height: 100%;
+}
+.inform .tab span{
+    position: relative;
+    display: block;
+    margin-left: 24px;
+    width: 45px;
+    height: 31px;
+    background-image: url("../img/index/index.png");
+    z-index: 4;
+}
+.tab .li1 span{
+    background-position: 159px 405px;
+}
+.tab .li2 span{
+    background-position: 159px 527px;
+}
+.tab .li3 span{
+    background-position: 159px 464px;
+    height: 29px;
+}
+.tab .li4 span{
+    background-position: 159px 434px;
+    height: 29px;
+}
+.tab .li5 span{
+    background-position: 159px 495px;
+}
+.inform .tab li i{
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    opacity: 0;
+    width: 76px;
+    height: 32px;
+    background: #68d7fc;
+    border-radius: 16px;
+    transition: .5s cubic-bezier(1,0,.67,.35);
+}
+.inform .tab li.on i{
+    bottom: -8px;
+    opacity: 1;
+}
+.inform .tab li b{
+    position: absolute;
+    top: 11px;
+    left: -4px;
+    width: 16px;
+    height: 29px;
+    background: url(../img/index/index.png) 100px -508px;
+}
+.inform .show {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 208px;
+    border-top: 1px solid #000;
+    margin-top: 2px;
+}
+.inform .show ul.wrapUl{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000%;
+    height: 100%;
+}
+.inform .show ul.wrapUl>li{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.inform .show ul.list li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #333;
+}
+.inform .show ul.list li p{
+    float: left;
+    width: 400px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inform .show ul.list li p a{
+    color: #000;
+}
+.inform .show ul.list li span{
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+.inform .show {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 208px;
+    border-top: 1px solid #000;
+    margin-top: 2px;
+}
+.inform .show ul.warpUl{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000%;
+    height: 100%;
+}
+.inform .show ul.warpUl>li{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.inform .show ul.list li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #333;
+}
+.inform .show ul.list li p{
+    float: left;
+    width: 400px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inform .show ul.list li p a{
+    color: #000;
+}
+.inform .show ul.list li p a:hover{
+    color: #9c1a9a;
+}
+.inform .show ul.list li span{
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+/*式神*/
+.shishenbg{
+    width: 100%;
+    height: 601px;
+    background: url("../img/index/content/strategy_bg.jpg") center top;
+}
+.shishenbg .shishenM{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+.shishenbg .shishenM .title{
+    width: 480px;
+    height: 95px;
+    margin-top: 37px;
+}
+.shishenM .title ul li{
+    display: block;
+    position: relative;
+    float: left;
+    width: 96px;
+    height: 90px;
+    margin-left: 5px;
+}
+.shishenM .title ul li:nth-child(1){
+    width: 130px;
+    height: 85px;
+    background-position: -411px -587px;
+}
+.shishenM .title ul li:nth-child(2),.shishenM .title ul li:nth-child(4){
+    margin:32px 0 0 10px;
+    background-position: -1422px -153px;
+    width: 44px;
+    height: 4px;
+}
+
+.shishenM .title ul li p{
+    position: absolute;
+    top: 20px;
+    width: 96px;
+    height: 90px;
+    background-position: 618px 258px;
+    transition: .5s;
+    opacity: 0;
+}
+.shishenM .title ul li.on p{
+    opacity: 1;
+    top: -9px;
+}
+.shishenM .title ul li:hover p{
+    opacity: 1;
+    top: -9px;
+}
+.shishenM .title ul li i{
+    position: absolute;
+    left: 16px;
+    top: 19px;
+    display: block;
+    width: 70px;
+    height: 33px;
+    cursor: pointer;
+}
+.shishenM .title ul li .tab1{
+    background-position: 157px -865px
+}
+.shishenM .title ul li .tab2{
+    background-position: 80px 115px;
+}
+.shishenM .main{
+    width: 840px;
+    height: 345px;
+    margin-left: 100px;
+}
+.shishenM .main .shishenList,.shishenM .main .zhujueList{
+    position: absolute;
+    width: 840px;
+    height: 345px;
+}
+.shishenM .main .shishenList .shishenTab{
+    margin-top: 40px;
+    width: 810px;
+    height: 29px;
+    padding: 13px 0;
+    border-bottom: 1px dotted #333;
+}
+.shishenList .shishenTab li{
+    float: left;
+}
+.shishenTab li.clickBtn{
+    margin: 0 15px;
+    line-height: 29px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.shishenTab li.allBtn{
+    margin-left: 15px;
+}
+.shishenTab li.clickBtn.on,.shishenTab li.clickBtn:hover{
+    color: #cea441;
+}
+.shishenList .mainList{
+    overflow: hidden;
+    position: relative;
+    width: 839px;
+    height: 205px;
+    margin-top: 30px;
+}
+.shishenList .mainList .mUl{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 840px;
+    height: 100%;
+}
+.shishenList .mainList .mUl.show{
+    display: block;
+}
+.shishenList .mainList .mUl >ul{
+    width: 1000%;
+    height: 100%;
+}
+.shishenList .mainList .mUl p.btn{
+    position: absolute;
+    top: 50%;
+    width: 43px;
+    height: 33px;
+    margin-top: -16.5px;
+    background-image: url("../img/index/index.png");
+    cursor: pointer;
+}
+.shishenList .mainList .mUl p.btn.left{
+    left: 0;
+    background-position: 159px -832px;
+}
+.shishenList .mainList .mUl p.btn.left:hover {
+    background-position: 159px -964px;
+}
+.shishenList .mainList .mUl p.btn.right{
+    right: 1px;
+    background-position: 159px -931px;
+}
+.shishenList .mainList .mUl p.btn.right:hover{
+    background-position: 159px -898px;
+}
+.shishenList .mainList li.ssList{
+    float: left;
+    width: 139px;
+    height: 100%;
+    border-right: 1px solid #999;
+}
+.shishenList .mainList li.ssList .shishen{
+    position: relative;
+    width: 89px;
+    height: 92px;
+    margin: 5px auto 15px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+.shishenList .mainList li.ssList .shishen img{
+    position: absolute;
+    width: 81px;
+    height: 84px;
+    top: 2px;
+    left: 2px;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+}
+.shishenList .mainList li.ssList .shishen p.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+.shishenList .mainList li.ssList .shishen:hover p.cover{
+    opacity: 1;
+}
+.shishenList .mainList li.ssList .shishen p.cover span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    line-height: 15px;
+    transform: translate(-50%,-50%);/*宽高不确定时的居中方式*/
+}
+.shishenList .mainList li.ssList .shishen i.new{
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 31px;
+    height: 36px;
+    background: url("../img/index/content/shishen/new_icon.png");
+}
+.shishenM .zhujueList .tab{
+    float: left;
+    width: 150px;
+    height: 250px;
+    margin-top: 38px;
+}
+.zhujueList .tab ul li{
+    position: relative;
+    width: 138px;
+    height: 35px;
+    margin: 22px 0;
+    border: 2px solid #FFF;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    transition: .2s;
+}
+.zhujueList .tab ul li i{
+    opacity: 0;
+    position: absolute;
+    right: -15px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: #000;
+    transition: .2s;
+}
+.zhujueList .tab ul li:hover,.zhujueList .tab ul li.active{
+    background: #fff;
+    border-color: #000;
+}
+.zhujueList .tab ul li:hover i,.zhujueList .tab ul li.active i{
+    opacity: 1;
+}
+.zhujueList .pic{
+    float: left;
+    position: relative;
+    width: 656px;
+    height: 100%;
+    margin-left: 20px;
+}
+.zhujueList .pic>ul{
+    width: 100%;
+    height: 100%;
+}
+.zhujueList .pic>ul>li{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.zhujueList .pic .img{
+    float: left;
+    position: relative;
+    width: 380px;
+    height: 100%;
+}
+.zhujueList .pic .img img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.zhujueList .pic .dec{
+    float: right;
+    width: 230px;
+    height: 250px;
+    margin-top: 80px;
+}
+.zhujueList .pic .dec p.index{
+    width: 38px;
+    height: 23px;
+    background-image: url("../img/index/index.png");
+}
+.zhujueList .pic .qm .dec p.index{
+    background-position: 120px 351px;
+}
+.zhujueList .pic .sl .dec p.index{
+    background-position: 158px 374px;
+}
+.zhujueList .pic .yby .dec p.index{
+    background-position: 120px 374px;
+}
+.zhujueList .pic .bqn .dec p.index{
+    background-position: 158px 351px;
+}
+.zhujueList .pic .dec p.name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: 2px solid #000;
+}
+.zhujueList .pic .dec p.info{
+    margin-top: 3px;
+    border-top: 1px solid #000;
+    font-size: 13px;
+    color: #222;
+    line-height: 25px;
+}
+.strategy{
+    overflow: hidden;
+    width: 1200px;
+    height: 510px;
+    margin: -50px auto 0;
+}
+.strategy .leftPart{
+    float: left;
+    width: 376px;
+    height: 100%;
+}
+.leftPart .search{
+    position: relative;
+    width: 100%;
+    height: 58px;
+}
+.leftPart .search .sInp{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 316px;
+    height: 40px;
+    border: 2px solid #000;
+    border-right: none;
+}
+.leftPart .search .sInp input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-indent: 15px;
+    border: none;
+    outline: none;
+}
+.leftPart .search .sBtn{
+    position: absolute;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background: url("../img/index/index.png") 158px -563px;
+    cursor: pointer;
+}
+.leftPart .search .sBtn:hover{
+    background-position: 158px -505px;
+}
+.leftPart .bMain{
+    width: 368px;
+    height: 430px;
+    margin-top: 18px;
+    border: 2px solid #000;
+}
+.leftPart .bMain .banner{
+    position: relative;
+    width: 100%;
+    height: 263px;
+}
+.leftPart .bMain .banner .pic{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 228px;
+}
+.leftPart .bMain .banner .pic ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000%;
+    height: 100%;
+}
+ .leftPart .bMain .banner .pic ul li{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.leftPart .bMain .banner .tab{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 16px;
+    margin-left: -32px;
+}
+.leftPart .bMain .banner .tab ul li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border: 4px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.leftPart .bMain .banner .tab ul li.on{
+    background: #000;
+}
+.leftPart .bMain .navLink{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+.leftPart .bMain .navLink ul li{
+    float: left;
+    position: relative;
+    width: 92px;
+    height: 150px;
+}
+.leftPart .bMain .navLink ul li a{
+    display: block;
+    height: 100%;
+}
+.leftPart .bMain .navLink ul li span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 134px;
+    margin-left: -12px;
+    background-image: url("../img/index/index.png");
+    transition: .5s;
+}
+.leftPart .bMain .navLink ul li a:hover span{
+    top: -10px;
+}
+.leftPart .bMain .navLink ul li.l1 span{
+    background-position: 214px -316px;
+}
+.leftPart .bMain .navLink ul li.l2 span{
+    background-position: 250px -466px;
+}
+.leftPart .bMain .navLink ul li.l3 span{
+    background-position: 238px -316px;
+}
+.leftPart .bMain .navLink ul li.l4 span{
+    background-position: 190px -316px;
+}
+.leftPart .bMain .navLink ul li i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 150px;
+    background: url("../img/index/index.png") 263px -315px;
+}
+.rightPart{
+    float: right;
+    width: 782px;
+    height: 100%;
+}
+.rightPart .title {
+    width: 100%;
+    height: 95px;
+    margin-top: 75px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.rightPart .title .bg1{
+    float: left;
+    display: block;
+    width: 134px;
+    height: 85px;
+    background: url(../img/index/index.png) 523px 259px;
+}
+.rightPart .title .dotted{
+    float: left;
+    display: block;
+    width: 44px;
+    height: 4px;
+    background:url("../img/index/index.png")  -1422px -153px;
+    margin: 45px 10px 0;
+}
+.rightPart .title .tab{
+    cursor: pointer;
+}
+.rightPart .title p.tab{
+    position: relative;
+    float: left;
+    width: 96px;
+    height: 90px;
+    margin-top: 2px;
+}
+.rightPart .title .tab i{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/index/index.png") 619px 258px;
+    opacity: 0;
+    transition: .5s;
+}
+.rightPart .title .tab.on i{
+    top: 0;
+    opacity: 1;
+}
+.rightPart .title .tab span{
+    display: block;
+    position: relative;
+    background-image: url("../img/index/index.png");
+}
+.rightPart .title .tab1{
+    width: 69px;
+    height: 39px;
+    background-position: 158px -755px;
+    margin: 20px auto 0;
+}
+.rightPart .title .tab2{
+    width: 69px;
+    height: 32px;
+    background-position: 157px 558px;
+    margin: 26px auto 0;
+}
+.rightPart .title .tab3{
+    width: 74px;
+    height: 35px;
+    background-position: 158px -795px;
+    margin: 22px auto 0;
+}
+.rightPart .title .tab4{
+    width: 80px;
+    height: 31px;
+    background-position: 319px 563px;
+    margin: 26px auto 0;
+}
+.rightPart .mContent{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 28px;
+}
+.rightPart .mContent .show{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1100%;
+    height: 100%;
+}
+.rightPart .mContent ul{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.rightPart .mContent ul li{
+    float: left;
+    position: relative;
+    margin-right: 56px;
+    width: 342px;
+    height: 48px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-bottom: 1px dotted #333;
+}
+ .rightPart .mContent ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rightPart .mContent ul li p.mTitle{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+.rightPart .mContent ul li p.author{
+    color: #aaa;
+    line-height: 25px;
+}
+.rightPart .mContent ul li i{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-right-width: 6px;
+    border-left: 6px #000;
+}
+.rightPart .mContent ul li a:hover p.mTitle{
+    color: #c1831c;
+}
+
+.fan{
+    width: 1200px;
+    height: 560px;
+    margin: 57px auto 0;
+}
+.fan .tab{
+    position: relative;
+    width: 100%;
+    height: 110px;
+}
+.fan .tab .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 112px;
+    height: 106px;
+    background: url(../img/index/index.png) 630px 890px;
+}
+.fan .tab .tabNav{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1062px;
+    height: 89px;
+}
+.fan .tab .tabNav .line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+.fan .tab .tabNav ul li{
+    float: left;
+    position: relative;
+    width: 155px;
+    height: 60px;
+    border-right: 1px dotted #000;
+    cursor: pointer;
+}
+.fan .tab .tabNav ul li span{
+    position: absolute;
+    top: 14px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    transition: .5s;
+}
+.fan .tab .tabNav ul li i{
+    position: absolute;
+    left: 0;
+    bottom: -82px;
+    width: 156px;
+    height: 54px;
+    background-image: url("../img/index/fan/icons.png");
+    transition: .5s;
+}
+.fan .tab .tabNav ul li.l6{
+    border:none;
+}
+.fan .tab .tabNav ul li.l1 i{
+    background-position: 0 0;
+}
+.fan .tab .tabNav ul li.l2 i{
+    background-position: -166px 0;
+}
+.fan .tab .tabNav ul li.l3 i{
+    background-position: -317px 0;
+}
+.fan .tab .tabNav ul li.l4 i{
+    background-position: -476px 0;
+}
+.fan .tab .tabNav ul li.l5 i{
+    background-position: -628px 0;
+}
+.fan .tab .tabNav ul li.l6 i{
+    background-position: -922px 0;
+}
+.fan .tab .tabNav ul li.on span{
+    top: 0;
+}
+.fan .tab .tabNav ul li.on i{
+    bottom: -30px;
+}
+.fan .tab .goLink{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    width: 101px;
+    height: 24px;
+    background: url(../img/index/index.png) -930px -608px;
+    transition: .5s;
+}
+.fan .tab .goLink:hover{
+    right: -10px;
+}
+.fan .mFan{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 430px;
+    margin-top: 35px;
+}
+.fan .mFan .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1020%;
+    height: 100%;
+}
+.fan .mFan .show ul{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.fan .mFan .show ul li{
+    float: left;
+    width: 285px;
+    height: 210px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.fan .mFan .show ul li .pic{
+    position: relative;
+    width: 100%;
+    height: 163px;
+    cursor: pointer;
+}
+.fan .mFan .show ul li .pic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fan .mFan .show ul li .pic span{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    transition: .5s;
+}
+.fan .mFan .show ul li .pic:hover span{
+    opacity: 1;
+}
+.fan .mFan .show ul li .pic span b{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 79px;
+    height: 93px;
+    background: url(../img/index/index.png) -679px -474px;
+}
+.fan .mFan .show ul li .sTitle{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    color: #666;
+}
+.video{
+    width: 100%;
+    height: 514px;
+    background: url("../img/index/video/video_bg.jpg") top center no-repeat;
+    margin-top: 60px;
+}
+.video .vMain{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.video .vMain .box{
+    overflow: hidden;
+    position: absolute;
+    top: 56px;
+    width: 560px;
+    height: 430px;
+}
+.video .vMain .leftvideo{
+    left: 0;
+}
+.video .vMain .rightWallpaper{
+    right: 0;
+}
+.video .vMain .box ul{
+    width : 110%;
+    height: 100%;
+}
+
+.video .vMain .box ul li{
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 200px;
+    margin: 0 20px 18px 0;
+    cursor: pointer;
+    background: #fff;
+}
+.video .vMain .box.rightWallpaper ul li{
+    background: transparent;
+}
+.video .vMain .box ul li.first{
+    background: transparent;
+}
+.video .vMain .box ul li.first i{
+    display: block;
+    width: 227px;
+    height: 150px;
+    background: url(../img/index/index.png) -1079px -466px;
+}
+.video .vMain .rightWallpaper ul li.first i{
+    background-position: -1107px -614px;
+    width: 220px;
+    height: 148px;
+}
+.video .vMain .box ul li .pic{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 154px;
+    transition: .5s;
+}
+.video .vMain .box ul li .pic img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transform-origin: bottom center;
+    transition: .5s;
+}
+.video .vMain .box ul li:hover .pic{
+    height: 162px;
+}
+.video .vMain .box ul li:hover .pic img{
+    transform: scale(1.06);
+}
+.video .vMain .box ul li .dec{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-indent: 15px;
+    line-height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.activity{
+    position: relative;
+    width: 1200px;
+    height: 375px;
+    margin: 60px auto 0;
+}
+.activity .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 225px;
+    height: 100%;
+}
+.activity .left img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.activity .right{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 910px;
+    height: 100%;
+}
+.activity .right ul{
+    width: 110%;
+    height: 100%;
+}
+.activity .right ul li{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 153px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+.activity .right ul li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .5s;
+}
+.activity .right ul li:hover img{
+    transform: scale(1.06);
+}
+.activity .right ul li .dec{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.contact{
+    position: relative;
+    width: 1200px;
+    height: 235px;
+    margin: 62px auto 0;
+}
+.contact ul li{
+    float: left;
+    position: relative;
+    margin-right: 116px;
+}
+.contact ul li.l1{
+    width: 70px;
+    height: 199px;
+}
+.contact ul li.qrd{
+    width: 270px;
+    height: 178px;
+    background: #f6f6f6;
+    padding-top: 22px;
+}
+.contact ul li.qrd .p1,.contact ul li.qrd .p2,.contact ul li.qrd .p3{
+    float: left;
+}
+.contact ul li.qrd .p1{
+    margin-left: 30px;
+}
+.contact ul li.qrd .p3,.contact ul li.qrd .p2{
+    margin-left: 10px;
+}
+.contact ul li.qrd .p1,.contact ul li.qrd .p2{
+    width: 16px;
+    font-size: 15px;
+    line-height: 17px;
+}
+.contact ul li.qrd .p3{
+    width: 22px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.contact ul li.qrd .p4{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    line-height: 35px;
+}
+.contact ul li.qrd .p4 a{
+    color: #d2c199;
+}
+.contact ul li.qrd .p4 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 2px;
+    background: #ccc;
+}
+.contact ul li.qrd div.img{
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    width: 122px;
+    height: 122px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.contact ul li.qrd div.img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contact ul li.l4{
+    width: 160px;
+    height: 230px;
+    margin-right: 0;
+    margin-top: -32px;
+}
+.contact ul li.l4 i{
+    display: block;
+    width: 109px;
+    height: 109px;
+    background: url(../img/index/index.png) -570px -474px;
+}
+.contact ul li.l4 .p1{
+    margin-top: 20px;
+}
+.contact ul li.l4 .p2{
+    font-size: 20px;
+    font-family: Georgia, "Microsoft Yahei", serif;
+}
+.contact ul li.l4 .p4{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    line-height: 35px;
+}
+.contact ul li.l4 .p4 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 2px;
+    background: #ccc;
+}
+.contact ul li.l4 .p4 a{
+    color: #d2c199;
+}
+.contact .goTop{
+    position: absolute;
+    right: -40px;
+    top: 15px;
+    width: 24px;
+    height: 112px;
+    background: url(../img/index/index.png) 203px -466px;
+    cursor: pointer;
+}
+.footer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 524px;
+    background: url("../img/index/foot.jpg") top center no-repeat;
+    margin-top: 38px;
+}
+.footer .p1{
+    position: relative;
+    top: 110px;
+    width: 591px;
+    height: 29px;
+    background: url(../img/index/index.png) 897px 407px;
+    margin: 0 auto;
+}
+.footer .p2{
+    width: 116px;
+    height: 23px;
+    background: url(../img/index/index.png) -930px -632px;
+    margin: 165px auto 0;
+    opacity: 1;
+    transition: .8s;
+}
+.footer .p3{
+    position: relative;
+    top: 0;
+    width: 22px;
+    height: 71px;
+    background: url(../img/index/index.png) 158px -81px;
+    margin: 31px auto 0;
+    transition: .8s;
+}
+.footer .p4{
+    position: relative;
+    width: 237px;
+    height: 212px;
+    background: url(../img/index/index.png) -331px -363px;
+    margin: 30px auto 0;
+    top: 0;
+    transition: .8s;
+}
+.footer .qrd{
+    position: absolute;
+    left: 50%;
+    top: 240px;
+    width: 200px;
+    height: 160px;
+    margin-left: -75px;
+    opacity: 0;
+    transition: .8s;
+}
+.footer .qrd .pic{
+    float: left;
+    width: 154px;
+    height: 154px;
+    margin-top: 3px;
+    box-shadow: 0 0 25px #67baeb;
+}
+.footer .qrd .pic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footer .qrd .txt{
+    float: right;
+    width: 16px;
+    height: 160px;
+    background: url(../img/index/index.png) 278px -311px;
+}
+.footer .hover{
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer .hover:hover .p2{
+    opacity: 0;
+}
+.footer .hover:hover .p3{
+    top: -80px;
+}
+.footer .hover:hover .qrd{
+    opacity: 1;
+    top: 220px;
+}
+.footer .hover:hover .p4{
+    top: 40px;
+}
+/*动画*/
+@keyframes move{
+    0%{top: 4px}
+    100%{ top: 100px}
+}

@@ -1,0 +1,518 @@
+body{
+    min-width: 1280px;
+}
+body.noScroll{
+    height: 100%;
+    overflow: hidden;
+}
+.clerFix:after{
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+}
+.posiMar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+/*背景*/
+#bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#bg .bg{
+    width: 100%;
+    background: top center no-repeat;
+}
+#bg .bg1{
+    height: 1026px;
+    background: url("../img/bg1.jpg") no-repeat center ;
+}
+#bg .bg1 embed{
+    opacity: 0;
+}
+#bg .bg2{
+    height: 1080px;
+    background: url("../img/bg2.jpg") -200px 0;
+}
+#bg .bg3{
+    height: 534px;
+    background: url("../img/bg3.jpg") -200px 0;
+}
+/*warp*/
+#warp{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+#warp .wswiper{
+    overflow: hidden;
+}
+#warp .wswiper #logo{
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    width: 150px;
+    height: 115px;
+    padding: 20px 0 0 20px;
+}
+#warp .wswiper #logo img{
+    float: left;
+}
+#warp .wswiper #logo .logo{
+    border:3px solid #fff;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+#warp .wswiper .swp2{
+     position: absolute;
+     right: -180px;
+     top: 25px;
+     opacity: 0;
+     width: 177px;
+     height: 45px;
+     background-image: url("../img/goindex.png");
+ }
+#warp .wswiper .swp2 a{
+    display: block;
+    height: 100%;
+    background: rgba(0,0,0,.1);
+    border-radius: 20px;
+    transition: .3S;
+}
+#warp .wswiper .swp2 a:hover {
+    background: rgba(0, 0, 0, 0);
+}
+#warp .wswiper .swp3{
+    position: absolute;
+    top: 480px;
+    opacity: 0;
+    right: 80px;
+    width: 340px;
+    height: 521px;
+    background-image: url("../img/swp3.png");
+}
+#warp .wswiper .swp4{
+    position: absolute;
+    top: 810px;
+    right: 135px;
+    opacity: 0;
+    width: 340px;
+    height: 150px;
+}
+#warp .wswiper .swp4 p{
+    color: #3d2672;
+    font-weight: bold;
+    font-size: 16px;
+}
+#warp .wswiper .swp4 .qrcode{
+    float: left;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    background:rgba(255,255,255,.4) url("../img/qrcode.png") no-repeat center center /120px 120px;
+}
+#warp .wswiper .swp4 .qrcode img{
+    position: absolute;
+    top: 5px;
+    left: -7px;
+    width: 150px;
+    animation: move 3s linear infinite;
+}
+#warp .wswiper .swp4 .dowload{
+   float: right;
+    width: 205px;
+    height: 130px;
+}
+#warp .wswiper .swp4 .dowload a{
+    background:#000;
+}
+#warp .wswiper .swp4 .dowload a:nth-child(1){
+    display: block;
+    margin-bottom: 6px;
+}
+#warp .wswiper .swp4 .dowload a img{
+    opacity: .7;
+    transition: 1s;
+}
+#warp .wswiper .swp4 .dowload a img:hover{
+    opacity: 1;
+}
+/*视频*/
+.video-btn{
+    position: absolute;
+    top: 452px;
+    right: 320px;
+    width: 165px;
+    height: 120px;
+    background: url("../img/videoBtn.png") center center no-repeat;
+    cursor: pointer;
+}
+.video-btn img{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+.video{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.video .video-box{
+    width: 800px;
+    height: 450px;
+    border: 2px solid #b69476;
+}
+.video .video-box .close,.content .close{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 35px;
+    height: 35px;
+    background: url("../img/close.png") 0 0/100% 100%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.video .video-box .close:hover,.content .close:hover{
+    transform: rotate(180deg);
+}
+.mouse{
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    opacity: 1;
+    width: 30px;
+    height: 70px;
+    margin-left: -15px;
+    background: url("../img/dBtn.png");
+    animation: mouse 1s linear infinite;
+}
+/*新版本信息*/
+.newwinfo{
+    position: relative;
+}
+.newwinfo .main{
+    width: 1280px;
+    margin: 0 auto;
+}
+.newwinfo .main .title{
+    position: relative;
+    top: 0;
+    opacity: 1;
+    height: 150px;
+    background: url("../img/newinfo/newinf.png") no-repeat center top;
+    transition: 1s;
+}
+.newwinfo .main .title.hide{
+    top: 80px;
+    opacity: 0;
+}
+.newwinfo .main .infoList ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.newwinfo .main .infoList ul li{
+    position: relative;
+    top: 0;
+    opacity: 1;
+    margin: 13px 4px;
+    width: 418px;
+    height: 213px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    transition: .5s;
+}
+.newwinfo .main .infoList ul li.hide{
+    top: 80px;
+    opacity: 0;
+}
+.newwinfo .main .infoList ul li:hover{
+    background-position-y: 0px;
+}
+.newwinfo .main .infoList ul li i{
+    position: absolute;
+    background: #a57c47;
+    display: block;
+    animation-fill-mode: forwards !important;
+}
+.infoList .i1,.infoList .i3{
+    width: 0px;
+    height: 2px;
+}
+.infoList .i2,.infoList .i4{
+    width: 2px;
+    height: 0px;
+}
+.infoList .i1{
+    top: 9px;
+    left: 9px;
+}
+.infoList .i2{
+    top: 9px;
+    right: 9px;
+}
+.infoList .i3{
+    bottom: 22px;
+    right: 9px;
+}
+.infoList .i4{
+    bottom: 22px;
+    left: 9px;
+}
+.infoList .li1{
+    background: url("../img/newinfo/p1.png");
+}
+.infoList .li2{
+    background: url("../img/newinfo/p2.png");
+}
+.infoList .li3{
+    background: url("../img/newinfo/p3.png");
+}
+.infoList .li4{
+    background: url("../img/newinfo/p4.png");
+}
+.infoList .li5{
+    background: url("../img/newinfo/p5.png");
+}
+.infoList .li6{
+    background: url("../img/newinfo/p6.png");
+}
+.newwinfo .main .infoList ul li:hover .i1{
+    animation: i1 .3s 0s linear 1;
+}
+.newwinfo .main .infoList ul li:hover .i2{
+    animation: i2 .135s .3s linear 1;
+}
+.newwinfo .main .infoList ul li:hover .i3{
+    animation: i1 .3s .435s linear 1;
+}
+.newwinfo .main .infoList ul li:hover .i4{
+    animation: i2 .135s .735s linear 1;
+}
+.newwinfo .popwindow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.newwinfo .popwindow .content{
+    width: 1180px;
+    height: 735px;
+}
+.content ul li{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: -50px 0 0 -70px ;
+}
+.content .close{
+    top: 69px;
+    right: 66px;
+}
+.content .txt{
+    position: relative;
+    width: 440px;
+    height: 315px;
+    margin: 240px 0 0 550px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.content .txt .mainTxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 410px;
+    line-height: 35px;
+}
+.content .txt .boldRed{
+    font-weight: bold;
+    color: #e5402a;
+}
+.content .txt .boldBlack{
+    font-weight: bold;
+    color: #000;
+}
+.content .txt .mBottom{
+    margin-bottom:35px;
+}
+.content .txt .normal{
+    color: #333;
+}
+.content .txt .scroll{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8px;
+    background: #e2e2e2;
+}
+ .content .txt:hover .scroll{
+    display: block;
+}
+.content .txt .scroll .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+ .content .btn{
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    width: 46px;
+    height: 18px;
+    margin-top: -9px;
+    cursor: pointer;
+}
+.content .left{
+    left: 0;
+    background: url("../img/newinfo/toleft.png");
+}
+.content .right{
+    right: 0;
+    background: url("../img/newinfo/toright.png");
+}
+.content .left:hover{
+    animation: Lbtnmove 1.5s linear infinite;
+}
+.content .right:hover{
+    animation: Rbtnmove 1.5s linear infinite;
+}
+/*游戏特色*/
+.game{
+    position: relative;
+}
+.game .main{
+    position: relative;
+    width: 1130px;
+    height: 650px;
+    margin: 100px auto;
+}
+.game .main .title{
+    position: relative;
+    width: 800px;
+    height: 150px;
+    background: url("../img/game/game_title.png");
+    margin: 0 auto;
+}
+.game .main .pic{
+    position: relative;
+    width: 935px;
+    height: 439px;
+    margin: auto;
+    transform-style: preserve-3d;
+}
+.pic ul{
+    width: 774px;
+    height: 438px;
+    perspective: 800px;
+}
+.pic ul li{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 774px;
+    height: 438px;
+    transform: translate3D(0,0,-302px) rotateY(0deg);
+    transition:transform .5s;
+}
+.pic ul li.left{
+    transform: translate3D(-155px,0px,-233px) rotateY(30deg);
+}
+.pic ul li.mid{
+    transform: translate3D(0,0,0) rotateY(0deg);
+    z-index: 99;
+}
+.pic ul li.right{
+    transform: translate3D(196px,0px,-302px) rotateY(-30deg);
+}
+.pic ul li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: .5;
+}
+.pic ul li.mid img{
+    opacity: 1;
+}
+.banner .btn div{
+    position: absolute;
+    width: 42px;
+    height: 82px;
+    top: 50%;
+    margin-top: -41px;
+    cursor: pointer;
+}
+.banner .btn .Bleft{
+     background: url("../img/game/left.png");
+ }
+.banner .btn .Bright{
+    background: url("../img/game/right.png");
+    right: 0;
+}
+/********动画放置***********/
+/*二维码*/
+@keyframes move {
+    0%{ top: 4px;}
+    50%{ top: 120px;}
+    100%{ top: 4px;}
+}
+/*小鼠标*/
+@keyframes mouse{
+    0%{bottom: 220px;opacity: 1;}
+    100%{bottom: 100px;opacity:0;}
+}
+/*I1 I3动画*/
+@keyframes i1 {
+    0%{width: 0px;}
+    100%{width: 400px}
+}
+@keyframes i2 {
+    0%{height: 0px;}
+    100%{height: 180px;}
+}
+/*newinfot弹窗层的按钮动画*/
+@keyframes Lbtnmove {
+    0%{left: 0}
+    50%{left: -10px}
+    100%{left: 0}
+}
+@keyframes Rbtnmove {
+    0%{right: 0}
+    50%{right: -10px}
+    100%{right: 0}
+}
+/**@keyframes i3 {
+    0%{width: 0px;}
+    100%{width: 400px}
+}
+@keyframes i4 {
+    0%{height: 0px;}
+    100%{height: 180px;}
+}
+**/
